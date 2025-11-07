@@ -1,0 +1,331 @@
+/* ---------- GLOBAL STYLES ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ---------- NAVBAR ---------- */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+
+.logo h1 {
+  color: #1d2671;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1d2671;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c33764;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #c33764;
+}
+
+/* ---------- HOME PAGE ---------- */
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  text-align: center;
+}
+
+.home-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.home-container h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: linear-gradient(to right, #1d2671, #c33764);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ---------- AUTH PAGES (LOGIN + REGISTER) ---------- */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+.auth-box {
+  background: #fff;
+  color: #000;
+  width: 320px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.auth-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.auth-box h2 {
+  color: #1d2671;
+  margin-bottom: 15px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.auth-box p {
+  margin-top: 10px;
+}
+
+.auth-box a {
+  color: #c33764;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ---------- DATA PAGE ---------- */
+.data-section {
+  background-color: #f7f9ff;
+  color: #000;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.data-section h2 {
+  margin-bottom: 30px;
+  color: #1d2671;
+}
+
+.data-graph {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #1d2671;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* ---------- ESTIMATOR PAGE ---------- */
+.estimator-section {
+  background-color: #f8faff;
+  color: #000;
+  padding: 60px 10%;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.estimator-left,
+.estimator-right {
+  flex: 1;
+  background: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+}
+
+.estimator-left h2 {
+  color: #1d2671;
+  margin-bottom: 15px;
+}
+
+.estimator-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.estimator-left select,
+.estimator-left input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.estimator-left .btn {
+  background: linear-gradient(to right, #1d2671, #c33764);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.estimator-left .btn:hover {
+  opacity: 0.9;
+}
+
+.estimator-left #result {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #c33764;
+}
+
+.estimator-right h2 {
+  color: #1d2671;
+  margin-bottom: 15px;
+}
+
+#localityInfo {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ---------- ABOUT & CONTACT PAGES ---------- */
+.info-box {
+  max-width: 800px;
+  margin: 80px auto;
+  background: #fff;
+  color: #000;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info-box h2 {
+  color: #1d2671;
+  margin-bottom: 15px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  background-color: #1d2671;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  table {
+    width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-container h1 {
+    font-size: 22px;
+  }
+
+  .auth-box {
+    width: 90%;
+  }
+
+  .btn {
+    padding: 10px 18px;
+  }
+}
+
+
+
+
+

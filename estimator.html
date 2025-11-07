@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estimator | Mumbai House Price Estimator</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" />
+        <h1>Mumbai House Price Estimator</h1>
+      </div>
+      <ul>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="estimator.html" class="active">Estimator</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="estimator-section">
+    <div class="container">
+      <div class="estimator-left">
+        <h2>Estimate Property Price</h2>
+        <form id="priceEstimatorForm">
+          <select id="locality" required>
+            <option value="">Select Locality</option>
+            <option value="Bandra">Bandra</option>
+            <option value="Andheri">Andheri</option>
+            <option value="Dadar">Dadar</option>
+            <option value="Chembur">Chembur</option>
+            <option value="Powai">Powai</option>
+            <option value="Sion">Sion</option>
+            <option value="Borivali">Borivali</option>
+            <option value="Gamdevi">Gamdevi</option>
+            <option value="Malad">Malad</option>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+          </select>
+
+          <select id="bhk" required>
+            <option value="">Select BHK</option>
+            <option value="1">1 BHK</option>
+            <option value="2">2 BHK</option>
+            <option value="3">3 BHK</option>
+            <option value="4">4 BHK</option>
+          </select>
+
+          <input type="number" id="sqft" placeholder="Enter Square Footage" required />
+          <button type="submit" class="btn">Estimate</button>
+        </form>
+
+        <h3>Estimated Price:</h3>
+        <p id="result"></p>
+      </div>
+
+      <div class="estimator-right">
+        <h2>Why Are Prices Different?</h2>
+        <div id="localityInfo">
+          <p>Estimate first to see details about the selected locality.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Mumbai House Price Estimator | All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
